@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+	<description>JPA mappings for lionsoft data model</description>
+	<persistence-unit-metadata>
+		<persistence-unit-defaults>
+			<access>FIELD</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<package>at.aberger.tutorial.jee.model</package>
+	<entity class="Department">
+		<table name="DEPT"/>
+			<attributes>
+				<id name="number">
+					<column name="DEPTNO"/>
+					<generated-value strategy="IDENTITY"/>
+				</id>
+				<basic name="name">
+					<column name="DNAME"/>
+				</basic>
+				<basic name="location">
+					<column name="LOC"/>
+				</basic> 
+			</attributes>
+	</entity>
+		<entity class="Employee">
+		<table name="EMP"/>
+			<attributes>
+				<id name="number">
+					<column name="EMPNO"/>
+					<generated-value strategy="IDENTITY"/>
+				</id>
+				<basic name="name">
+					<column name="ENAME"/>
+				</basic>
+				<basic name="job">
+					<column name="JOB"/>
+				</basic>
+				<basic name="salary">
+					<column name="SAL"/>
+				</basic>
+				<basic name="commission">
+					<column name="COMM"/>
+				</basic>
+				<many-to-one name="department" target-entity="Department">
+					<join-column name="DEPTNO"/>
+				</many-to-one>
+			</attributes>
+	</entity>
+</entity-mappings>
