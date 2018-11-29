@@ -1,0 +1,8 @@
+thorntail:
+  datasources:
+    data-sources:
+      MyDS:
+        driver-name: mysql
+        connection-url: jdbc:mysql://mysql/mydb;create=true
+        user-name: app
+        password: app
