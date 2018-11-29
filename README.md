@@ -31,7 +31,7 @@ Laden Sie Ihr Arbeitsergbnis in Dockerhub hoch und geben SIe die Koordinaten im 
 ## Kommentar Thomas Kaar
 
 Ich habe so gut es ging versucht, die Scripts von dem GitRepo oben zu verstehen. Jedoch ist mir immer noch unerklärlich wie man dort das war-File deployed.
-Ich habe grundsätzlich versucht das Vehicle-Bsp auf die MySQL-Datenbank zu adaptieren und auch die dockerfiles soweit zumzuschreiben, dass man diese problemlos starte kann. Leider bin ich nicht fertig geworden. Dennoch habe ich ein Dockerfile zu dem ubuntu mit Java 10 geschrieben.
+Ich habe grundsätzlich versucht das Vehicle-Bsp (weil es bei meinem eigenen Probleme gegeben hat) auf die MySQL-Datenbank zu adaptieren und auch die dockerfiles soweit zumzuschreiben, dass man diese problemlos starte kann. Leider bin ich nicht fertig geworden. Dennoch habe ich ein Dockerfile zu dem ubuntu mit Java 10 geschrieben.
 
 ## CheatSheet
 
